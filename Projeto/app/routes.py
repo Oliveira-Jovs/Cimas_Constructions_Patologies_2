@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 from flask import Flask, request, send_file
 import os
 import zipfile
@@ -6,6 +7,8 @@ from ultralytics import YOLO
 import tempfile
 
 
+=======
+>>>>>>> f341786fc3845d633434a5fec52091cff0dd1d72
 from app import app
 from flask import render_template
 
@@ -13,6 +16,7 @@ from flask import render_template
 @app.route('/index')
 def index():
     return render_template('index.html')
+<<<<<<< HEAD
 app = Flask(__name__)
 
 # Carregar o modelo YOLOv8 (certifique-se de que o modelo já está treinado e salvo em algum lugar)
@@ -59,3 +63,4 @@ def upload_folder():
 
     # Retorna o arquivo zip para o cliente
     return send_file(zip_path, as_attachment=True, download_name="predicted_images.zip")
+

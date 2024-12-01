@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 function handleFileUpload(event) {
     const files = event.target.files;
 
@@ -26,5 +27,5 @@ function handleFileUpload(event) {
         .catch(error => alert('Erro ao enviar a pasta.'));
     } else {
         alert("Por favor, selecione uma pasta com imagens.");
-    }
+}
 }
