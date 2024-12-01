@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block contents %}
+<div class="input-container">
+    <label class="custum-file-upload" for="file">
+        <div class="icon">
+            <!-- Ícone (o mesmo que já estava) -->
+        </div>
+        <div class="text">
+            <span>Clique para fazer Upload</span>
+        </div>
+        <!-- Permite selecionar pastas -->
+        <input type="file" id="file" accept="image/*" webkitdirectory onchange="handleFileUpload(event)">
+    </label>
+</div>
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+{% endblock %}
